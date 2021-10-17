@@ -8,7 +8,7 @@
 * 다른 사이트들을 참고하여 클론코딩 및 재정리하였습니다.
 
 ## 기능 
-![image](img/todolist01.jpg)![image](img/todolist02.jpg)
+![image](img/todolist01.jpg)   ![image](img/todolist02.jpg)
 
 * 현재 시간 구현 
 * 오늘 날짜 구현 
