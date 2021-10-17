@@ -13,7 +13,7 @@ function paintToDo(text){
     const span = document.createElement('span');
     const newId = toDos.length + 1;
 
-    delBtn.innerText = '🙆‍♀️';
+    delBtn.innerText = '✅';
     span.innerText = text;
     toDoList.appendChild(li);
     li.appendChild(delBtn);
