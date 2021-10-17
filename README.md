@@ -4,13 +4,14 @@
 [VIEW DEMO](https://ahn-sujin.github.io/VanillaJS_ToDoList/html/index.html)
 
 ## 기능 
-![image](img/todolist01.jpg)   ![image](img/todolist02.jpg)
-
 * 현재 시간 구현 
 * 오늘 날짜 구현 
 * todolist 입력 
 * todolist 삭제 
 * localstorage 연동
+
+![image](img/todolist01.jpg)   ![image](img/todolist02.jpg)
+
 
 ## 참고
 * 본 작업물은 개인 공부를 목적으로 제작되었음을 알려드립니다.
