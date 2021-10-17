@@ -1,0 +1,215 @@
+* {
+    box-sizing :border-box;
+    margin: 0;
+    padding: 0;
+  }
+ 
+ html,body{
+   width:100%;
+   height:100%;
+ }
+ 
+ body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background: #000;
+   font-family:'Noto Sans KR'
+ }
+ 
+ 
+ .container {
+   position: relative;
+   overflow: hidden;
+   width:350px;
+   height: 650px;
+   background: #fff;
+   padding: 30px 25px;
+ }
+ .container:before {
+   content: '';
+   position: absolute;
+   left:0;
+   top:0;
+   width:100%;
+   height: 39%;
+   background: #f9ca24;
+   z-index: 1;
+ }
+ .container .top-area{
+   position: relative;
+   z-index: 2;
+ }
+ 
+ .toDoForm {
+   position: relative;
+   display: flex; align-items: center;
+ }
+ .toDoForm input {
+   width:100%;
+   display: block;
+   padding: 12px 0;
+   margin-right: 8px;
+   text-align: center;
+   border-radius: 20px;
+   border:none;
+   background: rgba(255,255,255,0.3);
+   color:rgba(255,255,255,0.7);
+   font-size: 14px;
+ }
+ .date-box {
+   position: relative;
+   padding:10px 0;
+ }
+ .date-box .date{
+   display:inline-block;
+   min-width:30px;
+   margin-top: -10px;
+   font-size: 45px;
+   font-weight: 900;
+   color:#000;
+ }
+ .date-box .cover {
+   position: relative;
+   min-height:48px;
+   display:inline-block;
+   /* background: red; */
+   vertical-align:top;
+ }
+ .date-box .cover .month {
+   color:#fff;
+   font-size: 20px;
+ }
+ .date-box .cover .year {
+   position: absolute;
+   bottom:0; left:0;
+   color:#fff;
+ }
+ .date-box .day {
+     float: right;
+     color:#fff;
+     font-size: 16px;
+     line-height: 65px;
+ }
+ /* card content */
+ .bot-area {
+   background: #fff;
+   padding: 30px 0;
+ }
+ .todoList {
+   position: relative;
+   z-index: 10;
+   background: #f7f7f7;
+   padding: 7px;
+   overflow-y: auto;
+   min-height: 600px;
+ }
+ .todoList:after {
+   position: absolute;
+   z-index:-1;
+   content: '';
+   width: 100%;
+   height:200%;
+   top:0;
+   left:0;
+   background: #f7f7f7;
+ }
+ 
+ .todoList li {
+   position: relative;
+   overflow: hidden;
+   list-style: none;
+   background: #fff;
+   padding: 12px 20px;
+   border: 1px solide #eaeaea;
+ }
+ .todoList li+li {
+   margin-top:14px;
+ }
+ .todoList li:before {
+   content: '';
+   position: absolute;
+   left:0;
+   top:0;
+   width:5px;
+   height:100%;
+   background: #badc58;
+ }
+ .todoList li .list{
+     color:green;
+     font-size: 18px;
+     font-weight: 500;
+ }
+ .todoList li p {
+   color:#666;
+   line-height: 1.5;
+ }
+ .todoList li .cover {
+   position: relative;
+   box-sizing: border-box;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .todoList li .info > span{
+     vertical-align: middle;
+ }
+ .todoList li button {
+   position: absolute;
+   top:8px;
+   right:10px;
+   display: inline-block;
+   font-size: 20px;
+   background: none;
+   border:none;
+   cursor: pointer;
+ }
+ /* .todoList li button:before {
+   position: absolute;
+   content: '';
+   border-radius: 50%;
+   top:0;
+   right:0;
+   width:40px;
+   height:40px;
+   transform:translate(50%,-50%);
+   background: #be2edd;
+ } */
+ .todoList li button xi {
+   position: relative;
+   top:20;
+   color:#fff;
+ }
+ .control-cover {
+   position: absolute;
+   bottom:0;
+   right:0;
+   width:100%;
+   padding-bottom: 30px;
+   text-align: center;
+ }
+ .add {
+   position: relative;
+   z-index: 20;
+   width:30px;
+   height:26px;
+   display: inline-block;
+   border-radius: 50%;
+   border:0;
+   background: #111;
+   color:#fff;
+   font-size: 20px;
+   line-height: 27px;
+   cursor: pointer;
+ }
+ 
+ .clock{
+     color: #fff;
+ }
+ .todo-date{
+     float: right;
+     margin-right: 23px;
+     font-size: 12px;
+     line-height: 28px;
+ }
